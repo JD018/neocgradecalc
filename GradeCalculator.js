@@ -1,4 +1,3 @@
-// © Jadon Duff 2022
 function link() {
     var string = document.getElementById('n').value
     var advanced = string.split('4/4').length-1
