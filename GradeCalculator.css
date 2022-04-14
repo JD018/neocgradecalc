@@ -1,0 +1,90 @@
+html{
+    cursor: url('cursor.cur') 15 15, default;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+.alignment{
+    align-items: center;
+    text-align: center;
+    float: left;
+}
+
+.grade{
+    /* background: linear-gradient(-45deg, #229ce2, #229ce2, #00ffff, #00ffff); Blue */
+    /* background: linear-gradient(-45deg, #e22222, #b8e222, #0084ff, #00ffff); Rainbow */
+    background: linear-gradient(-45deg, #e22222, #b8e222, #0084ff, #00ffff);
+    background-size: 300%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-weight: 900; */
+    font-size: 50px;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 20s ease-in-out infinite;
+    -moz-animation: animated_text 20s ease-in-out infinite;
+    -webkit-animation: animated_text 20s ease-in-out infinite; /** Can also be 10s **/
+    transition: 1.25s;
+    /* align-items: center; */
+    text-align: center;
+}
+@keyframes animated_text {
+    0% {background-position: 0px 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0px 50%;}
+}
+
+.paste{
+    border-style: solid;
+    border-width: 3px; /* Bottom Border */
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgba(33, 180, 40, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
+    height: 40px;
+    font-size: 25px;
+    transition: 1s;
+    outline: 0px solid transparent;
+    align-items: center;
+    /* text-align: left; */
+}
+.paste:hover{
+    width: 360px;
+    cursor: text;
+    transition: 0.75s;
+}
+.paste:focus{
+    width: 400px;
+    transition: 0.5s;
+}
+
+.buttonSpecial{
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    font-weight: 100;
+    font-size: 15px;
+    border: 0.1px solid #ffffff;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(82,215,255);
+    transition: 0.75s;
+    cursor: url('cursorinfo.png') 15 15, default;
+    border-radius: 1px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.buttonSpecial:hover{
+    background-color: rgba(255,255,255,0);
+    color: rgb(255, 255, 255);
+    transition: 0.25s;
+}

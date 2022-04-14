@@ -1,0 +1,26 @@
+<!-- © Jadon Duff 2022 -->
+<!DOCTYPE html>
+    <html>
+        <link href="GradeCalculator.css" rel="stylesheet"></link>
+        <body class="alignment">
+            <p id="grade" class="grade">
+                Waiting...
+            </p>
+            <p></p>
+            <input id="n" class="paste"></input>
+
+
+            <p>/** This Smart Grade Calculator will allow you to find your current grade in a class by simply copying and pasting from the Canvas page. **/
+
+                /** To do this, do to the grades section of your class. Make sure grading period is the right quarter. Finally, make sure that ALL OTHER QUARTER TABS ARE CLOSED. Next, open ONLY THE CURRENT QUARTER. **/
+                
+                /** Now, simply click CTRL-A and paste it with CTRL-V into the box below. The algorithm will now calculate your grade instantly. **/
+            
+            *Note: this is in Beta and is prone to glitches. The grade listed here may be wrong.
+            **Note2: the appeared grade may be lower or higher than your actual grade. Also, this does not factor in Habits of Work, which aren't listed on Canvas.</p>
+            <script src="GradeCalculator.js"></script>
+            <button onclick="link()" class="buttonSpecial">
+                Calculate
+            </button>
+        </body>
+    </html>
